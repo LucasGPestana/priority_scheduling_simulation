@@ -38,7 +38,7 @@ if __name__ == "__main__":
     
     print("---"*20)
     print(f"Clock {clock}".center(60))
-    print("Fila de Pronto:", [process.name for process in processes])
+    print("Fila de Pronto:", [process.name for process in ready_queue])
     
     print("Processo em Execução:", execution_process.name if execution_process else "Nenhum")
     print("---"*20)
